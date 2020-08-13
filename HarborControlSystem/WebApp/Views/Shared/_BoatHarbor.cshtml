@@ -1,0 +1,72 @@
+﻿@model Helper.Models.Harbor
+
+
+<script src="~/Content/Script/BoatScriptFile.js"></script>
+
+
+@{
+    if (Model.WindSpeed > 0)
+    {
+        <div class="row col-sm-12">
+            <div class="col-sm-2">
+                <p>WindSpeed: @Model.WindSpeed Km/h</p>
+
+            </div>
+
+        </div>
+    }
+    else
+    {
+        <div class="row col-sm-12">
+            <div class="col-sm-4">
+                <p style="color:coral">Weather api is not running. Please execute api.</p>
+            </div>
+        </div>
+    }
+}
+
+
+<div class="row col-sm-12">
+    <hr />
+</div>
+@foreach (var item in Model.Boats)
+{
+    <div class="row col-sm-12">
+        <div class="col-sm-2">
+            @{
+                <p>Boat Type: @item.BoatType Boat</p>
+                <p>Duration: @item.TimeElapse ms</p>
+                <p>Speed: @item.Speed Km/h</p>
+            }
+        </div>
+        <div class="col-sm-2">
+            @{
+                var idValueLoad = item.Id + "Load";
+                <div id="@idValueLoad">
+                    <img src="~/Image/Boat.jpg" style="float:left;width:50%;height:100%;object-fit:cover;" />
+                </div>
+            }
+        </div>
+        <div class="col-sm-6">
+            <div class="myProgress">
+                <div id="@item.Id" data-time="@item.TimeElapse" class="myBar">
+                </div>
+            </div>
+        </div>
+
+        @{
+            var idValue = item.Id + "Reach";
+            <div class="col-sm-2">
+                <div id="@idValue" style="display:none">
+                    <img src="~/Image/Boat.jpg" style="float:left;width:50%;height:100%;object-fit:cover;" />
+                </div>
+            </div>
+        }
+
+    </div>
+
+    <div class="row col-sm-12">
+        <hr />
+    </div>
+
+}

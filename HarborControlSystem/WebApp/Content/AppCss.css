@@ -1,0 +1,17 @@
+﻿
+
+
+.myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.myBar {
+    width: 1%;
+    height: 46px;
+    background-color: lightslategray;
+}
+
+.btn {
+    width:100%
+}

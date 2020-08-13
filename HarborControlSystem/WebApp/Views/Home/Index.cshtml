@@ -1,0 +1,52 @@
+﻿
+
+<link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+<link href="~/Content/AppCss.css" rel="stylesheet" />
+<script src="~/Scripts/toastr.js"></script>
+<link href="~/Content/toastr.css" rel="stylesheet" />
+<script src="~/Scripts/BoatScriptFile.js"></script>
+
+
+<div class="container" >
+
+    <div class="row" style="background-image: url('../../Image/Sea.jpg');">
+
+        <h1>Harbour Control System</h1>
+
+    </div>
+    <br />
+  
+    <div class="row" style="background-color:aliceblue; ">
+        <br />
+        <div id="BoatsCountDiv">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <div class="col-sm-2">
+                        <p style="text-align: center;margin-top: 8px;">Boats on Harbor:</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <input placeholder="Enter boats count" class="form-control" value="0" id="BoatsCount" onkeypress="return validatenumerics(event);">
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-primary" wi onclick="AddBoatToHarbor();">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="BoatHarbor" style="display:none; ">
+        </div>
+        <div id="ReloadBoatHarbor" style="display: none; ">
+            <div class="form-group">
+                <div class="col-sm-offset-10">
+                    <button type="button" class="btn pull-right btn-primary" onclick="RealodBoatToHarbor();">Reload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
