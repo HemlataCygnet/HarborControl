@@ -24,7 +24,7 @@ namespace HarborControlSyetem.WebApi.Controllers
         }
 
         /// <summary>
-        /// Get weather information vased on city 
+        /// Get weather information based on city 
         /// </summary>
         /// <param name="city"></param>
         /// <returns></returns>

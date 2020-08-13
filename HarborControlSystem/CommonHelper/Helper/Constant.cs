@@ -21,6 +21,6 @@
 
     public class WeatherMapConstants
     {
-        public const string City = "Ahmedabad,IN";
+        public const string City = "Durban,ZA";
     }
 }

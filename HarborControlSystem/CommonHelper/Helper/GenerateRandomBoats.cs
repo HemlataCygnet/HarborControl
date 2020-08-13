@@ -12,7 +12,7 @@ namespace UI.Utility
         public static double windSpeed = 0;
 
         /// <summary>
-        /// Get randome generated boats
+        /// Get random generated boats
         /// </summary>
         /// <param name="boatCount"></param>
         /// <returns></returns>
