@@ -1,9 +1,12 @@
 # About Solution:
 
-*Software:* Visual Studio 2017
-*Language:* C#
-*Front End:* JavaScript
-*Framework:* .Net MVC
+Software: Visual Studio 2017
+
+Language: C#
+
+Front End: JavaScript
+
+Framework:  .Net MVC
 
 ## Development:
 
